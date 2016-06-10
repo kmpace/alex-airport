@@ -57,7 +57,7 @@ FAADataHelper.prototype.formatAirportStatus = function(airportStatus) {
 	});
 
 	if (airportStatus.delay === 'true') {
-		var template = _.template('There is currently a delay for ${airport}.' + 'The average delay time is ${delay_time}.' + 
+		var template = _.template('There is currently a delay for ${airport}. ' + 'The average delay time is ${delay_time}. ' + 
 			'Delay is because of the following: ${delay_reason}. ${weather}');
 
 		return template({
@@ -76,11 +76,9 @@ FAADataHelper.prototype.formatAirportStatus = function(airportStatus) {
 		weather: weather
 
 
-	});
+		});
 
-
-
-}
+	}
 
 };
 
